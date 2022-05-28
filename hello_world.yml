@@ -4,4 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-
+    - name: Copy file
+      ansible.builtin.copy:
+        src: /opt/copyfile.txt
+        dest: /opt/
